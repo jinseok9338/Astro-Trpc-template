@@ -2,16 +2,28 @@
   "name": "apparent-asteroid",
   "type": "module",
   "version": "0.0.1",
+  "license": "MIT",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro check && astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "supabase-gen-type": "npx supabase gen types typescript --project-id xplymrhodywtwkkmoliu > src/supabase/supabase.types.ts"
   },
   "dependencies": {
     "@astrojs/check": "^0.3.1",
+    "@astrojs/react": "^3.0.7",
+    "@astrojs/tailwind": "^5.0.3",
+    "@supabase/supabase-js": "^2.39.0",
+    "@types/react": "^18.0.21",
+    "@types/react-dom": "^18.0.6",
     "astro": "^4.0.3",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "supabase": "^1.115.5",
+    "tailwindcss": "^3.0.24",
     "typescript": "^5.3.3"
-  }
+  },
+  "devDependencies": {}
 }
